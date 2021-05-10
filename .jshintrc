@@ -1,6 +1,6 @@
 {
   "esversion": 6,
-  "curly": true,
+  "curly": false,
   "eqeqeq": true,
   "latedef": "nofunc",
   "undef": true,
@@ -8,5 +8,6 @@
   "trailing": true,
   "indent": 2,
   "browser": true,
-  "node": true
+  "node": true,
+  "laxbreak": true
 }

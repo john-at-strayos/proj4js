@@ -40,7 +40,7 @@ function startTests(chai, proj4, testPoints) {
   describe('proj4', function() {
     describe('core', function() {
       testPoints.forEach(function(testPoint) {
-        describe(testPoint.code, function() {
+        describe(testPoint.code+"\n"+testPoint.ll.join(','), function() {
           var xyAcc = 2,
             llAcc = 6;
           if ('acc' in testPoint) {
@@ -459,3 +459,4 @@ if(typeof process !== 'undefined'&&process.toString() === '[object process]'){
     startTests(require('chai'), require('../dist/proj4-src'), require('./testData'));
   })();
 }
+console.log('hello');

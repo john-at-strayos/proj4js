@@ -97,7 +97,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-mocha-phantomjs');
   grunt.registerTask('custom',function(){
-    grunt.task.run('rollup', 'uglify');
+    grunt.task.run('rollup');//, 'uglify');
     var projections = this.args;
     if(projections[0]==='default'){
       grunt.file.write('./projs.js','export default function(){}');
