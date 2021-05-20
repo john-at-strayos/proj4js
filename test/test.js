@@ -4,7 +4,7 @@
 // Start the main app logic.
 
 function startTests(chai, proj4, testPoints) {
-
+	console.log('startTests',proj4);
 
   var assert = chai.assert;
   proj4.defs([
@@ -459,4 +459,3 @@ if(typeof process !== 'undefined'&&process.toString() === '[object process]'){
     startTests(require('chai'), require('../dist/proj4-src'), require('./testData'));
   })();
 }
-console.log('hello');
