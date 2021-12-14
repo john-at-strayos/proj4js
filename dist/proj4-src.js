@@ -2208,7 +2208,7 @@
     		p = toPoint(p);
     	}else{
     		var q=new (Object.getPrototypeOf(p).constructor)();
-    		const keys=Object.getOwnPropertyNames(p);
+    		var keys=Object.getOwnPropertyNames(p);
     		for(var i=0;i<keys.length;++i){
     			q[keys[i]]=p[keys[i]];
     		}
