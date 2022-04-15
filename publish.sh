@@ -4,18 +4,19 @@
 VERSION=$(node -e "console.log(require('./package.json').version)")
 
 # Build
-git checkout -b build
+#git checkout -b build
 node_modules/.bin/grunt
 git add dist -f
 git commit -m "build $VERSION"
 
 # Tag and push
-git tag $VERSION
-git push --tags git@github.com:proj4js/proj4js.git $VERSION
+#git tag $VERSION
+#git push --tags git@github.com:proj4js/proj4js.git $VERSION
+git push
 
 # Publish
-npm publish
+#npm publish
 
 # Cleanup
-git checkout master
-git branch -D build
+#git checkout master
+#git branch -D build
